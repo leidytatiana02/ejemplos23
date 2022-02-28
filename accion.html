@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accion</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <!--cambia el color:navbar-dark bg-dark -->
+    <div class="container-fluid">
+      <img src="../assets/images/logos/logo_movie.png" alt="logo movie">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--boton para vista movil-->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Generos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="../pages/accion.html">Acción</a></li>
+              <li><a class="dropdown-item" href="../pages/comedia.html">Comedia</a></li>
+              <li><a class="dropdown-item" href="../pages/terror.html">Terror</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ">Acerca de</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--Main content-->
+  <div class="container-fluid">
+    <!--Carrusel -->
+    <section>
+      <div class="row">
+        <div class="col">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <!--1ra imag  -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../assets/images/Godzilla_vs_Kong_banner.png" class="d-block w-100" alt="Godzilla vs Kong">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Godzilla vs Kong</h5>
+                  <p>Godzilla y Kong, dos de las fuerzas más poderosas de un planeta habitado por aterradoras criaturas,
+                    se enfrentan en un espectacular combate que sacude los cimientos de la humanidad.</p>
+                </div>
+              </div>
+              <!--2da imag -->
+              <div class="carousel-item">
+                <img src="../assets/images/Black_Widow_banner.png" class="d-block w-100" alt="imagen Relic">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Black Widow</h5>
+                  <p>Una peligrosa conspiración, relacionada con su pasado, persigue a Natasha Romanoff, también
+                    conocida como Viuda Negra. La agente tendrá que lidiar con las consecuencias de haber sido espía,
+                    así como con las relaciones rotas, para sobrevivir.</p>
+                </div>
+              </div>
+              <!--3ra imag -->
+              <div class="carousel-item">
+                <img src="../assets/images/Barrenderos_espaciales_banner.png" class="d-block w-100"
+                  alt="imagen Barrenderos Espaciales">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Barrenderos Espaciales</h5>
+                  <p>Los miembros de la tripulación Spaceship Victory encuentran dentro de la nave a una niña de 7 años.
+                    Se dan cuenta de que ella es el robot humano buscado por los guardias espaciales de UTS y deciden
+                    exigir un rescate a cambio.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Tabs & Aside -->
+    <section>
+      <div class="row pt-4">
+        <!--fila -->
+        <h2>Peliculas de Accion</h2>
+        <div class="col-8">
+          <!--columna1 -->
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true">Cartelera</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Pronto</button>
+            </li>
+          </ul>
+          <!--contenido peliculas por tarjetas -->
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              <h3>En Cartelera</h3>
+              <!--tarjetas-->
+              <div class="row">
+                <!--tarjetas Cartelera-->
+                <div class="col"><!--tarjeta1-->
+                  <div class="card" style="width: 20rem;">
+                    <img src="../assets/images/sin_tiempo_para_morir_cont.jpg" class="card-img-top"
+                      alt="imagen sin tiempo para morir">
+                    <div class="card-body">
+                      <h5 class="card-title">Sin Tiempo Para Morir</h5>
+                      <p class="card-text">Titulo en inglés: No Time to Die</p>
+                      <p class="card-text">Estreno: 30-Sept-2021</p>
+                      <p class="card-text">Genero: Acción</p>
+                      <p class="fs-6 card-text alert-primary">Recomendada para mayores de 12 años</p>
+                      <a href="../pages/pelaccion1.html" class="btn btn-primary">Ver Pelicula</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col"><!--tarjeta2-->
+                  <div class="card" style="width: 20rem;">
+                    <img src="../assets/images/venom_carnage_liberado__cont.png" class="card-img-top"
+                      alt="imagen venom: carnage liberado">
+                    <div class="card-body">
+                      <h5 class="card-title">Venom: Carnage Liberado</h5>
+                      <p class="card-text">Titulo en inglés: Venom: Let There Be Carnage</p>
+                      <p class="card-text">Estreno: 07-Oct-2021</p>
+                      <p class="card-text">Genero: Acción </p>
+                      <p class="fs-6 card-text alert-primary">Recomendada para mayores de 12 años</p>
+                      <a href="../pages/pelaccion2.html" class="btn btn-primary">Ver Pelicula</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col"><!--tarjeta3-->
+                  <div class="card" style="width: 20rem;">
+                    <img src="../assets/images/shang_chi_cont.jpg" class="card-img-top"
+                      alt="imagen shang chi y la leyenda de los diez anillos">
+                    <div class="card-body">
+                      <h5 class="card-title">Shang Chi y La Leyenda de los Diez Anillos</h5>
+                      <p class="card-text">Titulo en inglés: Shang Chi And The Legend Of The Ten Rings </p>
+                      <p class="card-text">Estreno: 02-Sept-2021</p>
+                      <p class="card-text">Genero: Acción </p>
+                      <p class="fs-6 card-text alert-primary">Recomendada para mayores de 12 años</p>
+                      <a href="../pages/pelaccion3.html" class="btn btn-primary">Ver Pelicula</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <h3>Pronto</h3>
+              <div class="row">
+                <!--tarjetas Pronto-->
+                <div class="col"><!--tarjeta1-->
+                  <div class="card" style="width: 20rem;">
+                    <img src="../assets/images/riesgo_bajo_el_rojo_pronto.png" class="card-img-top"
+                      alt="imagen riesgo bajo el rojo">
+                    <div class="card-body">
+                      <h5 class="card-title">Riesgo Bajo el Rojo</h5>
+                      <p class="card-text">Titulo en inglés: The Ice Road</p>
+                      <p class="card-text">Estreno: 11-Nov-2021</p>
+                      <p class="card-text">Genero: Acción</p>
+                      <p class="card-text alert-primary">Recomendada para mayores de 12 años</p>
+                      <a href="../pages/pelaccion4.html" class="btn btn-primary">Ver Pelicula</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4"><!--Aside ACORDEON-->
+          <aside>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item"><!--TOP EXTRENOS-->
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Top de Estrenos
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">  <!--modal -->
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      Top Estrenos
+                    </button> 
+                   <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Top Estrenos</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body"> <!--contenido del modal -->  
+                            <ol class="list-group list-group-numbered">
+                              <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                  <!--margenes -->
+                                  <div class="fw-bold">Avengers: Endgame / Vengadores 4</div>
+                                  Genero: Acción/Aventura
+                                </div>
+                                <span class="badge bg-primary rounded-pill">14</span>
+                              </li>
+                              <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                  <div class="fw-bold">La Liga de la Justicia de Zack Snyder</div>
+                                  Genero: Acción/Aventura
+                                </div>
+                                <span class="badge bg-primary rounded-pill">10</span>
+                              </li>
+                              <li class="list-group-item d-flex justify-content-between align-items-start">
+                                <div class="ms-2 me-auto">
+                                  <div class="fw-bold">Godzilla vs Kong</div>
+                                  Genero: Ciencia ficción/Acción
+                                </div>
+                                <span class="badge bg-primary rounded-pill">7</span>
+                              </li>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- finModal -->
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item"><!--Funciones-->
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Funciones de peliculas en Cartelera
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul class="list-group">
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <p class="card-text ">Sin Tiempo Para Morir</p>
+                        <p class="card-text alert-primary">|Lu|Ma|Mi|</p>
+                        
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <p class="card-text ">Venom: Carnage Liberado</p>
+                        <p class="card-text alert-primary">|Lu|Ma|Mi|</p>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <p class="card-text ">Shang Chi y La Leyenda de los Diez Anillos</p>
+                        <p class="card-text alert-primary">|Lu|Ma|Mi|</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <!--Footer -->
+    <footer class="pt-4 bg-light text-dark">
+      <div class="row">
+        <div class="col">
+          <figure>
+            <a href="../index.html">
+              <img src="../assets/images/logos/logo_movie.png" alt="logo_movie">
+            </a>
+
+          </figure>
+        </div>
+        <div class="col">
+          <h4>Preguntas Frecuentes</h4>
+          <ul class="list-group">
+            <li class="list-group">Lorem ipsum</li>
+            <li class="list-group">Lorem ipsum</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Subcripción</h4>
+          <ul class="list-group">
+            <li class="list-group">Lorem ipsum</li>
+            <li class="list-group">Lorem ipsum</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Redes Sociales</h4>
+          <ul class="list-group">
+            <li class="list-group">Lorem ipsum</li>
+            <li class="list-group">Lorem ipsum</li>
+          </ul>
+        </div>
+        <div>
+          <div class="row">
+            <p class="text-center">Copyright © Creditos Libres I 2021. All right reserved</p>
+          </div>
+        </div>
+
+
+
+      </div>
+
+    </footer>
+  </div>
+  <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
